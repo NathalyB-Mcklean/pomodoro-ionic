@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <h1 class="app-title">Pomodoro</h1>
+
+    <div class="mode-badge" [class.break]="isBreak">
+      {{ isBreak ? 'Descanso' : 'Enfoque' }}
+    </div>
+
+    <div class="timer">
+      {{ timeDisplay }}
+    </div>
+
+    <div class="buttons">
+      <button class="btn secondary" (click)="reset()">Reiniciar</button>
+      <button class="btn primary" (click)="toggle()">
+        {{ isRunning ? 'Pausar' : 'Iniciar' }}
+      </button>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,65 @@
+ion-content {
+  --background: #F5F0E8;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 32px;
+}
+
+.app-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #3D2B1F;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.mode-badge {
+  background: #7A9E7E;
+  color: white;
+  padding: 6px 24px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+
+  &.break {
+    background: #B5CBBA;
+    color: #3D2B1F;
+  }
+}
+
+.timer {
+  font-size: 5rem;
+  font-weight: 300;
+  color: #3D2B1F;
+  letter-spacing: 0.05em;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &.primary {
+    background: #7A9E7E;
+    color: white;
+  }
+
+  &.secondary {
+    background: transparent;
+    border: 2px solid #7A9E7E;
+    color: #7A9E7E;
+  }
+}
