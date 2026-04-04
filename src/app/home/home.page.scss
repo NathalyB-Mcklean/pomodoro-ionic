@@ -8,7 +8,7 @@ ion-content {
   align-items: center;
   justify-content: center;
   height: 100%;
-  gap: 32px;
+  gap: 24px;
 }
 
 .app-title {
@@ -17,6 +17,7 @@ ion-content {
   color: #3D2B1F;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .mode-badge {
@@ -61,5 +62,45 @@ ion-content {
     background: transparent;
     border: 2px solid #7A9E7E;
     color: #7A9E7E;
+  }
+}
+
+.settings {
+  width: 80%;
+  background: transparent;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.settings-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3D2B1F;
+  text-align: center;
+  margin: 0;
+}
+
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  label {
+    font-size: 0.85rem;
+    color: #3D2B1F;
+  }
+
+  input {
+    width: 60px;
+    padding: 8px;
+    border: 2px solid #7A9E7E;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1rem;
+    color: #3D2B1F;
+    background: #F5F0E8;
   }
 }

@@ -16,5 +16,22 @@
         {{ isRunning ? 'Pausar' : 'Iniciar' }}
       </button>
     </div>
+
+    <div class="settings" *ngIf="!isRunning">
+      <h3 class="settings-title">Configurar tiempos</h3>
+      <div class="setting-row">
+        <label>Enfoque (1-60 min)</label>
+        <input type="number" min="1" max="60" [(ngModel)]="focusTime"
+          (ngModelChange)="onFocusChange()"
+          (keypress)="soloNumeros($event)" />
+      </div>
+      <div class="setting-row">
+        <label>Descanso (1-30 min)</label>
+        <input type="number" min="1" max="30" [(ngModel)]="breakTime"
+          (ngModelChange)="onBreakChange()"
+          (keypress)="soloNumeros($event)" />
+      </div>
+    </div>
+
   </div>
 </ion-content>
